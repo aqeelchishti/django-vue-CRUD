@@ -1,24 +1,40 @@
-# frontend
+# Django Vue CRUD App
 
-## Project setup
+## Project setup on local server
+
+### Django Backend API
 ```
+cd django-vue-CRUD/
+```
+
+#### Setup Virtual Environment
+```
+pip install pipenv
+pipenv --python 3.9 shell
+pipenv install -r requirements.txt
+```
+
+#### Database Migration & Run Backend Server
+```
+python manage.py migrate
+python manage.py runserver
+```
+
+### Vue Frontend App
+```
+cd frontend/
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compile for Development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### Compile for Production
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Customize configuration
+See [Vue js Configuration](https://cli.vuejs.org/config/).
